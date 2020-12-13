@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.artist-page-container {
+  padding-top: 20px;
+  background: #111323;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.artist-header-container {
+  background: #22272f;
   display: flex;
-  flex-direction: column;
+  margin-top: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 50px 20px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.artist-items {
+  margin-top: 40px !important;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.artist-image {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.artist-image:hover .artist-name {
+  display: block;
+}
+
+.artist-name {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 10px;
+  left: 0px;
+  display: none;
+  padding: 10px;
+  position: absolute;
+}
+
+.grid-container {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.loading-container {
+  margin: 100px auto 0 auto;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.artist-profile-modal {
+  border-radius: 6px;
+  max-width: 800px;
+  min-height: 50%;
+  background: #87ceeb;
+  margin: auto;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.artist-profile-header {
+  color: #fff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.artist-profile-header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.artist-profile-name {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+}
+
+.artist-info {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.featured-text {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  color: #fff;
+  margin-top: 20px !important;
+  margin-bottom: 50px !important;
+}
+
+.featured-works {
+  margin-top: 20px;
+}
+
+.art-title {
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artworks-container {
+  margin-bottom: 20px !important;
+}
+
+.custom-select {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.custom-select svg {
+  color: #fff;
 }
