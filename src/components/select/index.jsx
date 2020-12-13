@@ -7,7 +7,7 @@ import Select from "@material-ui/core/Select";
 const CustomSelect = ({ handleChange, value, options, label, className }) => {
   return (
     <FormControl variant="outlined" className={className}>
-      <InputLabel>{label}</InputLabel>
+      <InputLabel className={className}>{label}</InputLabel>
       <Select
         value={value}
         onChange={handleChange}

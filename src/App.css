@@ -114,7 +114,8 @@
   margin-bottom: 20px !important;
 }
 
-.custom-select {
+.custom-select,
+.custom-select .MuiSelect-outlined.MuiSelect-outlined {
   color: #fff;
   border: 1px solid #fff;
 }
